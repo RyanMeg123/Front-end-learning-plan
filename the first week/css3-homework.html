@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homework</title>
+    <style>
+        /* homework1 css*/
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        .homework1 {
+            width: 100%;
+            height: 50%;
+            color: #333;
+            background: #ffdb4f;
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 300;
+        }
+
+        #animation {
+            margin: 0 auto;
+            width: 83.33333333333333px;
+            height: 126px;
+            background: url(https://38.media.tumblr.com/tumblr_mb4zsyUYCT1rvuv0d.png);
+        }
+
+        /* homework2 css*/
+        .homework2 {
+            width: 100%;
+            height: 50%;
+            background: rgb(34, 34, 34);
+        }
+
+        .wrap {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            margin-left: -200px;
+            margin-top: -100px;
+        }
+
+        .heart {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+        }
+
+        .heart:before {
+            position: absolute;
+            display: block;
+            width: 130px;
+            height: 200px;
+            background: rgb(217, 70, 70);
+            border-top-right-radius: 100px;
+            border-top-left-radius: 100px;
+            -moz-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            content: '';
+            left: 150px;
+        }
+
+        .heart:after {
+            position: absolute;
+            display: block;
+            border-top-right-radius: 100px;
+            border-top-left-radius: 100px;
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background: rgb(217, 70, 70);
+            content: '';
+            width: 130px;
+            height: 200px;
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--1: 使用animation 序列帧 让人物动起来 -->
+
+        <div class="homework1">
+            <h1>Walk cycle CSS3 animation</h1>
+            <div id="animation"></div>
+        </div>
+
+        <!--2: 使用animation 做出心跳动效果-->
+        <div class="homework2">
+            <div class="wrap">
+                <div class="heart"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

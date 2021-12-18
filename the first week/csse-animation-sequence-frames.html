@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3序列帧</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            font-weight: normal;
+            color: #8ac640;
+            font-size: 2.5em;
+        }
+
+        #sprite {
+            width: 257px;
+            height: 186px;
+            background: url('http://www.studiogj.nl/codepen/sprite/sprite.jpg') left center;
+            margin: 0 auto;
+            margin-top: 50px;
+            animation: sprite 1s steps(8) infinite;
+            -webkit-animation: sprite 1s steps(8) infinite;
+        }
+
+        @keyframes sprite {
+            100% {
+                background-position: -2056px;
+            }
+        }
+
+        @-webkit-keyframes sprite {
+            100% {
+                background-position: -2056px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS3 animation sprite</h1>
+    <div id="sprite"></div>
+</body>
+
+</html>
