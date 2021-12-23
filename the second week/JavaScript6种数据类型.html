@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 标签中内嵌JavaScript</title>
+</head>
+
+<body>
+</body>
+<script>
+    // 1: undefined
+    var a;
+    console.log(a, 'a') // 使用var声明变量但是未赋值，a为undefined
+    // console.log(b, 'b') // 没有声明变量b 所以会报错；
+    // 2: nul  在js里的特殊数据类型，表示空引用；
+    var c = null;
+    // 3: boolean;
+    var d = true;
+    var e = 1 > 2 // false
+    console.log(e,'boolean')
+    // 4: number 在js 里不区分整数类型和小数类型，而是统一用数值类型；
+    var f = 11 // 整数
+    var g = 1.1 //  小数
+    //5: string 
+    var h = 'hello word'
+    var h = "hello word"
+    // 6: Object 在js 里 万物皆对象；包括函数，数组，自定义对象等 后面讲解
+
+</script>
+
+</html>
